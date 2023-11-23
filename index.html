@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body{background: linear-gradient(109deg, #FF3737 0%, #25FFF2 100%)no-repeat center/cover;
+        height: 100vh;
+    color: #fff;}
+
+    .box{display: flex;
+        justify-content: center;
+        align-items: center;
+    height: 100vh;}
+
+   .ani{
+    font-family: 'Roboto', sans-serif;
+        font-size: 150px;
+        animation: slide-up 1s ease both;
+    }
+
+/* from시작 to끝 */
+
+@keyframes slide-up {
+        from
+         { transform: translateY(100%)}
+        to
+         { transform: translateY(0%)}
+}
+         .D{
+            animation-delay:0s;
+         }
+         .E{
+            animation-delay:1s;
+         }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="ani D">D</div>
+        <div class="ani E">E</div>
+    </div>
+</body>
+</html>
